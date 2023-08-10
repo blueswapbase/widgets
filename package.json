@@ -221,7 +221,7 @@
   "bugs": {
     "url": "https://github.com/Uniswap/widgets/issues"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "directories": {
     "test": "test"
   },
