@@ -53,6 +53,20 @@ const USDC_OPTIMISM_GOERLI = new Token(
   'USDC',
   'USD//C'
 )
+export const USDC_BASE = new Token(
+  SupportedChainId.BASE,
+  '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA',
+  6,
+  'USD Base Coin',
+  'USDbC'
+)
+const USDC_BASE_GOERLI = new Token(
+  SupportedChainId.BASE_GOERLI,
+  '0x7E07E15D2a87A24492740D16f5bdF58c16db0c4E',
+  6,
+  'USD Base Coin',
+  'USDbC'
+)
 export const USDC_ARBITRUM = new Token(
   SupportedChainId.ARBITRUM_ONE,
   '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
@@ -123,6 +137,13 @@ export const DAI_OPTIMISM = new Token(
   'DAI',
   'Dai stable coin'
 )
+export const DAI_BASE = new Token(
+  SupportedChainId.BASE,
+  '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb',
+  18,
+  'DAI',
+  'Dai stable coin'
+)
 export const USDC_BNB_CHAIN = new Token(
   SupportedChainId.BNB,
   '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
@@ -134,6 +155,8 @@ export const USDC: { [chainId in SupportedChainId]: Token } = {
   [SupportedChainId.MAINNET]: USDC_MAINNET,
   [SupportedChainId.ARBITRUM_ONE]: USDC_ARBITRUM,
   [SupportedChainId.OPTIMISM]: USDC_OPTIMISM,
+  [SupportedChainId.BASE]: USDC_BASE,
+  [SupportedChainId.BASE_GOERLI]: USDC_BASE_GOERLI,
   [SupportedChainId.ARBITRUM_RINKEBY]: USDC_ARBITRUM_RINKEBY,
   [SupportedChainId.OPTIMISM_GOERLI]: USDC_OPTIMISM_GOERLI,
   [SupportedChainId.POLYGON]: USDC_POLYGON,
@@ -455,6 +478,20 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'WETH',
     'Wrapped Ether'
   ),
+  [SupportedChainId.BASE]: new Token(
+    SupportedChainId.BASE,
+    '0x4200000000000000000000000000000000000006',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [SupportedChainId.BASE_GOERLI]: new Token(
+    SupportedChainId.BASE_GOERLI,
+    '0x4200000000000000000000000000000000000006',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
   [SupportedChainId.ARBITRUM_ONE]: new Token(
     SupportedChainId.ARBITRUM_ONE,
     '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
@@ -564,6 +601,8 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in SupportedCha
     [SupportedChainId.MAINNET]: USDC_MAINNET.address,
     [SupportedChainId.ARBITRUM_ONE]: USDC_ARBITRUM.address,
     [SupportedChainId.OPTIMISM]: USDC_OPTIMISM.address,
+    [SupportedChainId.BASE]: USDC_BASE.address,
+    [SupportedChainId.BASE_GOERLI]: USDC_BASE_GOERLI.address,
     [SupportedChainId.ARBITRUM_RINKEBY]: USDC_ARBITRUM_RINKEBY.address,
     [SupportedChainId.OPTIMISM_GOERLI]: USDC_OPTIMISM_GOERLI.address,
     [SupportedChainId.POLYGON]: USDC_POLYGON.address,

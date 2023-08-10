@@ -9,6 +9,7 @@ import {
   CUSD_CELO,
   DAI,
   DAI_ARBITRUM_ONE,
+  DAI_BASE,
   DAI_OPTIMISM,
   DAI_POLYGON,
   ETH2X_FLI,
@@ -65,6 +66,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     USDT_OPTIMISM,
     WBTC_OPTIMISM,
   ],
+  [SupportedChainId.BASE]: [...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.BASE], DAI_BASE],
   [SupportedChainId.ARBITRUM_ONE]: [
     ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.ARBITRUM_ONE],
     DAI_ARBITRUM_ONE,
