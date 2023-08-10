@@ -113,7 +113,7 @@ export const ADDITIONAL_BASES: { [chainId: number]: { [tokenAddress: string]: To
  * tokens.
  */
 export const CUSTOM_BASES: { [chainId: number]: { [tokenAddress: string]: Token[] } } = {
-  [SupportedChainId.MAINNET]: {
-    [AMPL.address]: [DAI, WRAPPED_NATIVE_CURRENCY[SupportedChainId.MAINNET] as Token],
+  [SupportedChainId.BASE]: {
+    [AMPL.address]: [DAI, WRAPPED_NATIVE_CURRENCY[SupportedChainId.BASE] as Token],
   },
 }
