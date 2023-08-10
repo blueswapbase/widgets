@@ -1,5 +1,6 @@
 import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
 import arbitrumLogoUrl from 'assets/svg/arbitrum_logo.svg'
+import baseLogoUrl from 'assets/svg/base_logo.svg'
 import bnbLogo from 'assets/svg/bnb-logo.svg'
 import celoLogo from 'assets/svg/celo_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimism_logo.svg'
@@ -139,6 +140,36 @@ const CHAIN_INFO: ChainInfoMap = {
     nativeCurrency: { name: 'Optimism Goerli Ether', symbol: 'görOpETH', decimals: 18 },
     color: '#FF0420',
     backgroundColor: '#ff042029',
+  },
+  [SupportedChainId.BASE]: {
+    networkType: NetworkType.L2,
+    blockWaitMsBeforeWarning: ms`25m`,
+    bridge: 'https://bridge.base.org',
+    docs: 'https://docs.base.org/',
+    explorer: 'https://basescan.org/',
+    infoLink: '',
+    label: 'Base',
+    logoUrl: baseLogoUrl,
+    statusPage: '',
+    helpCenterUrl: '',
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    color: '#344AFB',
+    backgroundColor: '#ffffff',
+  },
+  [SupportedChainId.BASE_GOERLI]: {
+    networkType: NetworkType.L2,
+    blockWaitMsBeforeWarning: ms`25m`,
+    bridge: 'https://bridge.base.org',
+    docs: 'https://docs.base.org/',
+    explorer: 'https://goerli.basescan.org/',
+    infoLink: '',
+    label: 'Base',
+    logoUrl: baseLogoUrl,
+    statusPage: '',
+    helpCenterUrl: '',
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    color: '#344AFB',
+    backgroundColor: '#ffffff',
   },
   [SupportedChainId.ARBITRUM_ONE]: {
     networkType: NetworkType.L2,

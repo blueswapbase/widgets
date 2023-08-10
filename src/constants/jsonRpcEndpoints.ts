@@ -62,6 +62,18 @@ export const JSON_RPC_FALLBACK_ENDPOINTS: Record<SupportedChainId, string[]> = {
     // "Fallback" URLs
     'https://rpc.ankr.com/optimism',
   ],
+  [SupportedChainId.BASE]: [
+    //"Safe" URLs
+    'https://mainnet.base.org/',
+    //"Fallback" URLs
+    'https://rpc.ankr.com/base/',
+  ],
+  [SupportedChainId.BASE_GOERLI]: [
+    //"Safe" URLs
+    'https://goerli.base.org/',
+    //"Fallback" URLs
+    'https://rpc.ankr.com/base_goerli/',
+  ],
   [SupportedChainId.OPTIMISM_GOERLI]: [
     // "Safe" URLs
     'https://goerli.optimism.io',

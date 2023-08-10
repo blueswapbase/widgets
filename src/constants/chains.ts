@@ -14,6 +14,9 @@ export enum SupportedChainId {
   OPTIMISM = 10,
   OPTIMISM_GOERLI = 420,
 
+  BASE = 8453,
+  BASE_GOERLI = 84531,
+
   POLYGON = 137,
   POLYGON_MUMBAI = 80001,
 
@@ -31,6 +34,8 @@ export enum ChainName {
   KOVAN = 'kovan',
   OPTIMISM = 'optimism-mainnet',
   OPTIMISM_GOERLI = 'optimism-goerli',
+  BASE = 'base-mainnet',
+  BASE_GOERLI = 'base-goerli',
   ARBITRUM_ONE = 'arbitrum-mainnet',
   ARBITRUM_RINKEBY = 'arbitrum-rinkeby',
   POLYGON = 'polygon-mainnet',
@@ -52,6 +57,8 @@ export const CHAIN_NAMES_TO_IDS: { [chainName: string]: SupportedChainId } = {
   [ChainName.ARBITRUM_RINKEBY]: SupportedChainId.ARBITRUM_RINKEBY,
   [ChainName.OPTIMISM]: SupportedChainId.OPTIMISM,
   [ChainName.OPTIMISM_GOERLI]: SupportedChainId.OPTIMISM_GOERLI,
+  [ChainName.BASE]: SupportedChainId.BASE,
+  [ChainName.BASE_GOERLI]: SupportedChainId.BASE_GOERLI,
   [ChainName.CELO]: SupportedChainId.CELO,
   [ChainName.CELO_ALFAJORES]: SupportedChainId.CELO_ALFAJORES,
   [ChainName.BNB]: SupportedChainId.BNB,
@@ -68,6 +75,7 @@ export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   SupportedChainId.MAINNET,
   SupportedChainId.POLYGON,
   SupportedChainId.OPTIMISM,
+  SupportedChainId.BASE,
   SupportedChainId.ARBITRUM_ONE,
   SupportedChainId.CELO,
   SupportedChainId.BNB,
@@ -99,6 +107,8 @@ export const L2_CHAIN_IDS = [
   SupportedChainId.ARBITRUM_RINKEBY,
   SupportedChainId.OPTIMISM,
   SupportedChainId.OPTIMISM_GOERLI,
+  SupportedChainId.BASE,
+  SupportedChainId.BASE_GOERLI,
 ] as const
 
 export type SupportedL2ChainId = typeof L2_CHAIN_IDS[number]
