@@ -1,8 +1,11 @@
 {
-  "name": "@uniswap/widgets",
+  "name": "blueswapbasewidgets",
   "description": "Uniswap Interface",
   "homepage": "https://github.com/Uniswap/widgets#readme",
-  "repository": "https://github.com/Uniswap/widgets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uniswap/widgets.git"
+  },
   "files": [
     "dist"
   ],
@@ -214,5 +217,13 @@
   },
   "resolutions": {
     "decode-uri-component": "^0.2.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Uniswap/widgets/issues"
+  },
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  },
+  "author": ""
 }
